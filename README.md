@@ -75,41 +75,17 @@ The skill accesses these watcha.cn endpoints:
 - 效率工具 (Productivity)
 - And more...
 
-## Evaluation Results
-
-Tested on 3 scenarios with quantitative benchmarks:
-
-| Metric | With Skill | Without Skill | Delta |
-|--------|-----------|---------------|-------|
-| Pass Rate | 75% | 33% | **+42%** |
-| Watcha Data | ✓ | ✗ | — |
-| Review Analysis | ✓ | ✗ | — |
-| Quality vs Popularity | ✓ | Partial | — |
-
-The skill consistently provides watcha-specific data and community insights that generic responses lack.
-
 ## Development
 
 ### Project Structure
 
 ```
 findai/
-├── watcha-finder/           # The skill
-│   ├── SKILL.md            # Skill instructions
-│   └── evals/
-│       └── evals.json      # Test cases
-└── watcha-finder-workspace/ # Evaluation results
-    └── iteration-1/
-        ├── coding-tool-local/
-        ├── video-creation-china/
-        ├── general-discovery-beyond-hype/
-        ├── benchmark.json
-        └── review.html
+└── watcha-finder/           # The skill
+    ├── SKILL.md            # Skill instructions
+    └── evals/
+        └── evals.json      # Test cases
 ```
-
-### Running Evaluations
-
-The workspace contains evaluation results comparing skill vs baseline performance. Open `review.html` to see detailed comparisons.
 
 ## Limitations
 
