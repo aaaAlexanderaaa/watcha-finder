@@ -1,0 +1,21 @@
+# Workspace and temporary files
+watcha-finder-workspace/
+*.pyc
+__pycache__/
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Claude Code
+.claude/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
