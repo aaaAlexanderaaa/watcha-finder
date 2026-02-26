@@ -75,41 +75,17 @@ I need an AI video creation tool that works in China, what are my options?
 - 效率工具
 - 以及更多...
 
-## 评估结果
-
-在 3 个场景下进行了量化基准测试：
-
-| 指标 | 使用技能 | 不使用技能 | 差异 |
-|------|---------|-----------|------|
-| 通过率 | 75% | 33% | **+42%** |
-| Watcha 数据 | ✓ | ✗ | — |
-| 评测分析 | ✓ | ✗ | — |
-| 质量 vs 热度 | ✓ | 部分 | — |
-
-该技能持续提供通用回复所缺乏的 watcha 特定数据和社区洞察。
-
 ## 开发
 
 ### 项目结构
 
 ```
 findai/
-├── watcha-finder/           # 技能本体
-│   ├── SKILL.md            # 技能指令
-│   └── evals/
-│       └── evals.json      # 测试用例
-└── watcha-finder-workspace/ # 评估结果
-    └── iteration-1/
-        ├── coding-tool-local/
-        ├── video-creation-china/
-        ├── general-discovery-beyond-hype/
-        ├── benchmark.json
-        └── review.html
+└── watcha-finder/           # 技能本体
+    ├── SKILL.md            # 技能指令
+    └── evals/
+        └── evals.json      # 测试用例
 ```
-
-### 运行评估
-
-workspace 包含技能与基线性能对比的评估结果。打开 `review.html` 查看详细对比。
 
 ## 局限性
 
